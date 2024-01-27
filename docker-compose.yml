@@ -1,11 +1,12 @@
 version: '3'
 services:
   db:
-    image: postgres:13
+    image: postgres:16
     volumes:
       - db_data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
+      POSTGRES_DB: rails_app_development
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
   rails:
