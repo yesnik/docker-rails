@@ -35,5 +35,5 @@ rails -v
 
 5. Create Rails app that will be using Postgres:
 ```bash
-rails new . -d=postgresql
+rails new . -d=postgresql --skip-git
 ```
