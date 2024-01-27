@@ -14,23 +14,23 @@ cd docker-rails
 
 2. Build image for `rails` service and open bash console in the container:
 ```bash
-docker-compose run rails bash
+docker compose run rails bash
 ```
 
 3. Let's check what we have inside container:
 
 ```bash
 ruby -v
-# ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-linux]
+# ruby 3.3.0 (2023-12-25 revision 5124f9ac75) [x86_64-linux]
 
 bundle -v
-# Bundler version 2.2.3
+# Bundler version 2.5.3
 
 gem -v
-# 3.2.3
+# 3.5.3
 
 rails -v
-# Rails 6.1.3
+# Rails 7.1.3
 ```
 
 5. Create Rails app that will be using Postgres:
